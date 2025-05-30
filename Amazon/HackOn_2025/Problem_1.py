@@ -1,37 +1,3 @@
-# Problem:
-# You are given a string which represents a rope, where each character in the string corresponds to a 1 meter segment of rope. 
-# The length of rope is 'N'. Each segment of the rope can either have a knot ('2') or no knot ('1').
-# You are also given an integer 'K'. You have to fold the rope K times. 
-# In each fold, divide the rope into two equal parts and reverse the second half, then overlay the two parts by summing corresponding segments.
-# After folding K times, determine the strength of each segment in the resulting rope.
-# A knot ('2') contributes strength of 2 and a plain segment ('1') contributes 1.
-
-# Input Format:
-# First line: Two space-separated integers 'N' and 'K' (length of the rope and number of folds)
-# Second line: A string of length N containing only '1's and '2's
-
-# Output Format:
-# Output an array of space-separated integers representing the strength of each segment in the final rope
-
-# Constraints:
-# 1 <= N <= 10^6
-# 0 <= K <= log2(N)
-
-# Sample Testcase 1:
-# Input:
-# 8 2
-# 12212121
-# Output:
-# 5 7
-
-# Sample Testcase 2:
-# Input:
-# 4 1
-# 1221
-# Output:
-# 2 4
-#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------#
-
 #SOLUTION- 
 
 def fold_rope(N, K, rope):
